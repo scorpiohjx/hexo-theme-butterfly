@@ -5,8 +5,8 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  Home: / || fa fa-home
-  Archives: /archives/ || fa fa-archive
+  主页: / || fa fa-home
+  文章: /archives/ || fa fa-archive
   # Tags: /tags/ || fa fa-tags
   # Categories: /categories/ || fa fa-folder-open
   # Link: /link/ || fa fa-link
@@ -113,19 +113,23 @@ avatar:
 # the banner image of index
 index_img: /img/freedom.png
 
+top_img: /img/freedom.png
+
+post_img: /img/freedom.png
+
 # if the banner of page not setting,it will show the top_img
 default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
 
 # the banner image of archive page
-archive_img:
+archive_img: /img/freedom.png
 
 # the banner image of tag page
 # tag page, look like https://xxxxxxxxx.com/tags/butterfly
-tag_img:
+tag_img: /img/freedom.png
 
 # the banner image of category page
 # category page, look like https://xxxxxxxxx.com/categories/butterfly
-category_img:
+category_img: /img/freedom.png
 
 # 如果你有使用hexo-douban，可配置這個
 # douban:
@@ -256,23 +260,23 @@ gitalk:
 
 # valine comment system. https://valine.js.org
 valine:
-  enable: false # if you want use valine,please set this value is true
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  enable: true # if you want use valine,please set this value is true
+  appId: oA1vn3hTVPIIxRlATDmiCeie-gzGzoHsz # leancloud application app id
+  appKey: UMyrwvvWEqKPdcefqSJmoKMa # leancloud application app key
   notify: false # valine mail notify (true/false) Deprecated in v1.4.0+
   verify: false # valine verify code (true/false) Deprecated in v1.4.0+
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: en # i18n: zh-CN/zh-TW/en/ja
-  placeholder: Please leave your footprints # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info
-  recordIP: false # Record reviewer IP
+  lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
+  placeholder: 期待你的交流 # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail #valine comment header info
+  recordIP: true # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   emojiCDN: # emoji CDN
   enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields nick/mail/link
   bg: # valine background
-  count: false # dispaly comment count in top_img
+  count: true # dispaly comment count in top_img
 
 # utterances
 # https://utteranc.es/
@@ -356,7 +360,7 @@ qihu_site_verification:
 
 # 打賞按鈕
 reward:
-  enable: false
+  enable: true
   QR_code:
     - itemlist:
         img: /img/wechat.jpg
@@ -459,7 +463,7 @@ activate_power_mode:
 # 避免卡頓，建議只開啟一個
 # 點擊煙火特效
 fireworks:
-  enable: false
+  enable: true
 
 # 點擊出現愛心
 click_heart:

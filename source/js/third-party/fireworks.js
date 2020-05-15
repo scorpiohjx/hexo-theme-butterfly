@@ -1,7 +1,7 @@
 var canvasEl = document.querySelector('.fireworks')
 if (canvasEl) {
   var ctx = canvasEl.getContext('2d')
-  var numberOfParticules = 30
+  var numberOfParticules = 16
   var pointerX = 0
   var pointerY = 0
   // var tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown'
@@ -56,7 +56,7 @@ function createParticule (x, y) {
   p.x = x
   p.y = y
   p.color = colors[anime.random(0, colors.length - 1)]
-  p.radius = anime.random(16, 32)
+  p.radius = anime.random(4, 8)
   p.endPos = setParticuleDirection(p)
   p.draw = function () {
     ctx.beginPath()
